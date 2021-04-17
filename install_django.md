@@ -21,7 +21,7 @@ C:\>django-admin startproject install_check_project
 4. 생성된 폴더로 들어가서 실행
 C:\>install_check_project\python manage.py runserver
 
-5. 웹브아우저에서 주소창에 
+5. 웹브우저에서 주소창에 
 http://127.0.1:8000/
 
 cmd창에서 Ctrl+C 누르면 서버 종료됨
