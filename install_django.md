@@ -31,7 +31,7 @@ python manage.py createsuperuser
 python manage.py runserver
 10. 웹브우저에서 주소창에 
 http://127.0.0.1:8000/
-http://127.0.0.1:8000/admin (관리장)
+http://127.0.0.1:8000/admin (관리)
 
 cmd창에서 Ctrl+C 누르면 서버 종료됨
 
