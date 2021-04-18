@@ -1,3 +1,4 @@
+## Django 설치하기
 1. pip install 및 upgrade
 python -m pip install --upgrade pip
 pip --version
