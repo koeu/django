@@ -36,3 +36,4 @@ http://127.0.0.1:8000/admin (관리)
 cmd창에서 Ctrl+C 누르면 서버 종료됨
 
 
+출처: https://gcamp.tistory.com/tag/openhardware_aws_app
