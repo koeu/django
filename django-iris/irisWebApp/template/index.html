@@ -1,0 +1,31 @@
+<html>
+  
+  <h2>Check the flower is iris-versicolor or not? </h2>
+
+    <h3>Please enter details:</h3>
+    <br>
+    
+    <form method="post" enctype="multipart/form-data" action="predictsurvived">
+    
+ {% csrf_token %}
+ <div class="col-md-4 col-sm-4"><label for="fname">PassengerID:</label> </div> <input type="text" name="passengeridval" value={{temp.passengerID}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Pclass:</label> </div> <input type="text" id="lname" name="pclassval" value={{temp.Pclass}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Name:</label> </div> <input type="text" name="nameval" value={{temp.Name}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Sex:</label> </div> <input type="text" id="lname" name="sexval" value={{temp.Sex}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Age:</label> </div> <input type="text" name="ageval" value={{temp.Age}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">SibSp:</label> </div> <input type="text" id="lname" name="sibspval" value={{temp.SibSp}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Parch:</label> </div> <input type="text" name="parchval" value={{temp.Parch}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">ticket:</label> </div> <input type="text" id="lname" name="ticketval" value={{temp.ticket}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="fname">Fare:</label> </div> <input type="text" name="farval" value={{temp.Fare}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Cabin:</label> </div> <input type="text" id="lname" name="cabinval" value={{temp.Cabin}}><br><br>
+ <div class="col-md-4 col-sm-4"><label for="lname">Embarked:</label> </div> <input type="text" id="lname" name="embarkedval" value={{temp.Embarked}}><br><br>
+
+ <br>
+ <input type="submit" value="Submit" ></div>
+
+ {%  if scoreval  %}
+ <h1>Survived or not ?  {{scoreval}} 0: not survived, 1:survived </h1>
+ {% endif %}
+
+</form>
+</html>
